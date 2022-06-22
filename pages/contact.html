@@ -6,10 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="../styles/styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-
     <title>Desafio 2</title>
   </head>
-  <body>
+  <body id="body">
     <header class="header">
       <nav class="navegador  navbar navbar-expand-lg bg-light">
         <div class="container-fluid">
@@ -33,37 +32,37 @@
       </div>
       </nav>
     </header>
-    <section class="content">
-      <form class="formulario">
+    <section class="contenedorPrincipal__contacto">
+      <form class="container  contenedorPrincipal__contacto-formulario">
         <label for="nombre" >
           Nombre
         </label>
         <br />
-        <input type="text" id="nombre" class="respuestas" />
+        <input type="text" id="nombre" class="contenedorPrincipal__contacto-respuestas" />
         <br />
         <label for="apellido">
           Apellido
         </label>
         <br />
-        <input type="text" id="apellido" class="respuestas" />
+        <input type="text" id="apellido" class="contenedorPrincipal__contacto-respuestas" />
         <br />
         <label for="dni">
           Numero de D.N.I.
         </label>
         <br />
-        <input type="number" id="dni" class="respuestas"/>
+        <input type="number" id="dni" class="contenedorPrincipal__contacto-respuestas"/>
         <br />
         <label for="telefono">
           Telefono
         </label>
         <br />
-        <input type="tel" id="telefono" placeholder="Ingresa tu telefono" maxlength="10" class="respuestas" />
+        <input type="tel" id="telefono" placeholder="Ingresa tu telefono" maxlength="10" class="contenedorPrincipal__contacto-respuestas" />
         <br />
         <label for="mail">
           e-mail
         </label>
         <br />
-        <input type="email" id="mail" placeholder="Ingresa tu email" class="respuestas"/>
+        <input type="email" id="mail" placeholder="Ingresa tu email" class="contenedorPrincipal__contacto-respuestas"/>
         <br />
         <label>
           Localidad
@@ -98,17 +97,19 @@
           Algun comentario extra?
         </label>
         <br />
-        <textarea id="comentarios" class="respuestas" rows="10" cols="50"></textarea>
+        <textarea id="comentarios" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
         <br />
         <input type="submit" />
         <input type="reset" />
       </form>
     </section>
     <footer id="footer" class="footer">
-      <ul>
-        <li class="pages"><a href="../index.html">Inicio</a></li>
-        <li class="pages"><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
-      </ul>
+      <section class="navbar navbar-expand-lg bg-light  footer__contacto">
+        <div class="container-fluid">
+          <a class="pages  navbar-brand" href="../index.html">Contacto</a></li>
+          <a class="pages  navbar-brand" href="https://www.instagram.com" target="_blank">Instagram</a></li>
+        </div>
+      </section>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
   </body>

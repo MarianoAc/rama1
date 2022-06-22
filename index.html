@@ -9,50 +9,98 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <title>Desafio 2</title>
   </head>
-  <body class="body">
-    <header class="header">
-      <nav class="navegador  navbar navbar-expand-lg bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="./index.html">Logo </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navegador__index  navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="pages  nav-item"><a class="nav-link active" aria-current="page" href="./index.html">Inicio</a></li>
-            <li class="pages  nav-item"><a class="nav-link active" aria-current="page" href="./pages/armatupc.html">Arma tu pc</a></li>
-            <li class="pages  nav-item"><a class="nav-link active" aria-current="page" href="./pages/contact.html">Contacto</a></li>
-            <li class="pages  nav-item"><a class="nav-link active" aria-current="page" href="./pages/productos.html">Productos</a></li>
-            <li class="pages  nav-item"><a class="nav-link active" aria-current="page" href="https://www.instagram.com" target="_blank">Instagram</a></li>
-          </ul>
-          <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Buscar productos" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Buscar</button>
-          </form>
+  <body id="body">
+      <header>
+        <nav class="navegador  navbar navbar-expand-lg bg-light">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html">Logo </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navegador__index  navbar-nav text-center me-auto mb-2 mb-lg-0">
+              <li class="pages  nav-item"><a class="nav-link active" aria-current="page" href="./index.html">Inicio</a></li>
+              <li class="pages  nav-item"><a class="nav-link active" aria-current="page" href="./pages/armatupc.html">Arma tu pc</a></li>
+              <li class="pages  nav-item"><a class="nav-link active" aria-current="page" href="./pages/contact.html">Contacto</a></li>
+              <li class="pages  nav-item"><a class="nav-link active" aria-current="page" href="./pages/productos.html">Productos</a></li>
+              <li class="pages  nav-item"><a class="nav-link active" aria-current="page" href="https://www.instagram.com" target="_blank">Instagram</a></li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Buscar productos" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Buscar</button>
+            </form>
+            </div>
           </div>
-      </div>
-      </nav>
-    </header>
-    <section class="containerPrincipal__home">
-      <h2 class="containerPrincipal__home-title">¡Productos en oferta!</h2>
-      <article class="containerPrincipal__home-image">
-          <img src="./assets/01.png" alt="Mother Aorus" title="Mother Aorus" height="300px" width="300px" />
-          <img src="./assets/02.jpg" alt="Gabinete Corsair" title="Gabinete Corsair" height="300px" width="300px" />
-          <img src="./assets/03.png" alt="Teclado hyperx" title="Teclado hyperx" height="300px" width="300px" />
-      </article>
-      <h2 class="containerPrincipal__home-title">¡Productos destacados!</h2>
-      <article class="containerPrincipal__image">
-          <img src="./assets/04.png" alt="Ryzen 7 5700x" title="Ryzen 7 5700x" height="300px" width="300px" />
-          <img src="./assets/05.png" alt="Asrock Radeon Rx 6800 XT" title="Asrock Radeon Rx 6800 XT" height="300px" width="300px" />
-          <img src="./assets/06.jpg" alt="Disco SSD M2 WD Blue 1Tb" title="Disco SSD M2 WD Blue 1Tb" height="300px" width="300px" />
-      </article>
-    </section>
-    <footer id="footer" class="footer">
-      <ul class="footer__contacto">
-        <li class="pages"><a href="./pages/contact.html">Contacto</a></li>
-        <li class="pages"><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
-      </ul>
-    </footer>
+        </nav>
+      </header>
+      <section class="container  containerPrincipal__home">
+        <h2 class="containerPrincipal__home-title">¡Productos en oferta!</h2>
+        <article class="container  containerPrincipal__home-image">
+        <div id="carousel1" class="carousel slide" data-bs-ride="true">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carousel1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carousel1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carousel1" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carrusel  carousel-inner">
+              <div class="carousel-item active">
+                <img src="./assets/01.png" alt="Mother Aorus" title="Mother Aorus"/>
+              </div>
+              <div class="carousel-item">
+                <img src="./assets/02.jpg" alt="Gabinete Corsair" title="Gabinete Corsair"/>
+              </div>
+              <div class="carousel-item">
+                <img src="./assets/03.png" alt="Teclado hyperx" title="Teclado hyperx"/>
+              </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carousel1" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carousel1" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+          </article>
+          <h2 class="containerPrincipal__home-title">¡Productos destacados!</h2>
+          <article class="containerPrincipal__home-image">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./assets/04.png" alt="Ryzen 7 5700x" title="Ryzen 7 5700x"/>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./assets/05.png" alt="Asrock Radeon Rx 6800 XT" title="Asrock Radeon Rx 6800 XT"/>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./assets/06.jpg" alt="Disco SSD M2 WD Blue 1Tb" title="Disco SSD M2 WD Blue 1Tb"/>
+                  </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            </article>
+      </section>
+      <footer id="footer" class="footer">
+        <section class="navbar navbar-expand-lg bg-light  footer__contacto">
+          <div class="container-fluid">
+            <a class="pages  navbar-brand" href="./pages/contact.html">Contacto</a></li>
+            <a class="pages  navbar-brand" href="https://www.instagram.com" target="_blank">Instagram</a></li>
+          </div>
+        </section>
+      </footer>
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
   </body>
