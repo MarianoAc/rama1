@@ -1,0 +1,65 @@
+body {
+  display: flex;
+  height: 600px;
+  flex-direction: column;
+  padding: 1rem;
+  background-color: #333333;
+}
+
+.header,
+.footer{
+  border: solid;
+  background-color:#00b33c;
+  padding: 01rem;
+  margin: 01rem;
+  text-align: center;
+}
+.nav .pages,
+.footer .pages{
+  border: solid 1px black;
+  padding: 5px;
+  display: inline-block;
+  font-size: 20px;
+  font-family: Arial;
+}
+.content,
+.content .productos,
+.content .images{
+  padding: 01rem;
+  margin: 01rem;
+  padding: 1rem;
+  text-align: center;
+  color: #999999;
+}
+.lista{
+  height: 600px;
+  width: 150px;
+  border: solid black;
+  padding: 01rem;
+  margin: 01rem;
+  text-align: left;
+  color: #999999;
+  list-style-type: none;
+}
+.content{
+  padding: 01rem;
+  margin: 01rem;
+  padding: 1rem;
+  color: #999999;
+  text-align: center;
+}
+.formulario{
+  height: 550px;
+  width: 300px;
+  border: solid black;
+  padding: 01rem;
+  margin: 01rem;
+  color: #999999;
+  text-align: left;
+}
+.respuestas{
+  width:250px;
+}
+#footer {
+  text-align: left;
+}
