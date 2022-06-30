@@ -1,0 +1,75 @@
+#body {
+    background-color: #333333;
+}
+header {
+    border: solid;
+    padding: 01rem;
+    margin: 01rem;
+    text-align: center;
+    .pages{
+        padding: 5px;
+        font-size: 20px;
+        font-family: Arial;
+      }
+}
+.containerPrincipal__home {
+    .containerPrincipal__home-title{
+        padding: 01rem;
+        margin: 01rem;
+        text-align: center;
+        color: #999999;
+        font-family: Arial;
+    }
+    .containerPrincipal__home-image {
+        display:flex;
+        justify-content: center;
+    }
+}
+.contenedorPrincipalProductos{
+    .contenedorPrincipalProductos-lista {
+        border: solid;
+    }
+}
+.contenedorPrincipal__contacto{
+    padding: 01rem;
+    margin: 01rem;
+    display: flex;
+    justify-content: center;
+    .contenedorPrincipal__contacto-formulario{
+        border: solid black;
+        padding: 01rem;
+        margin: 01rem;
+        color: #999999;
+        text-align: left;
+        font-family: Arial;
+      }
+  }
+  .contenedorPrincipal__armatupc {
+    .contenedorPrincipal__armatupc-titulo{
+        font-family: Arial;
+        color: #999999;
+        text-align: center;
+      }
+      .contenedorPrincipal__armatupc-images{
+        display: flex;
+        justify-content: space-between;
+      }
+      @media screen and (max-width: 576px){
+        .contenedorPrincipal__armatupc-images{
+          flex-direction: column;
+          align-items: center;
+          gap: 10px;
+        }
+      }
+  }
+footer {
+    border: solid;
+    padding: 01rem;
+    margin: 01rem;
+    text-align: center;
+    .pages{
+        padding: 5px;
+        font-size: 20px;
+        font-family: Arial;
+      }
+}
